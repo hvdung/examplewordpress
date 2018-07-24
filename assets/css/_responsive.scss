@@ -1,0 +1,52 @@
+@media screen and (max-width:991px) {
+    .tab-content{
+        .tab-item{
+            a.more{
+                opacity: 1;
+            }
+        }
+    }
+    .post-content{
+        padding: 50px 20px;
+    }
+}
+@media screen and (max-width:769px) {
+    .tab-content{
+        .tab-item{
+            figure{
+                .ovrly,.buttons{
+                    display: none;
+                }
+            }
+        }
+    }
+    .bict-tabs{
+        li{
+            a{
+                font-size: 14px;
+                padding: 5px 10px;
+            }
+        }
+    }
+    .ft-btm{
+        .ft-copyright{
+            p{text-align: center}
+        }
+        .ft-menu{
+            margin-top: 20px;
+            text-align: center;
+            float: none;
+        }
+    }
+}
+@media screen and (max-width:480px) {
+    .bict-tabs{
+        li{
+            a{
+                font-size: 12px;
+                padding: 5px 10px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700|Oswald:400,500,600,700');
+img{max-width:100%;height:auto}
+h1,h2,h3{
+  font-family: 'Oswald', sans-serif;
+}
+body{
+  background-color: #F5F5F5;
+  font-family: 'Quicksand', sans-serif;
+}
+ul{
+  margin:0;
+  padding:0
+}
+li{list-style:none}
+a{
+  color:#333;
+  &:hover,&:focus{text-decoration:none};
+  cursor: pointer;
+}
+.absolute{position: absolute;}
+
+.wpmm-menu{z-index: 99!important;}
+.mm-slideout{z-index:unset!important;}
+
+.bict-pagi{
+  margin-bottom: 40px;
+  li{
+    display: inline;
+    .page-numbers{
+      border: 1px solid #777;
+      font-weight: 600;
+      padding: 5px 7px;
+      transition-duration: 0.3s;
+      background-color: #fff;
+      &:hover{
+        background-color: #dc2d13;
+        border-color: #dc2d13;
+        color: #fff;
+      }
+    }
+    .current{
+      background-color: #dc2d13;
+      border-color: #dc2d13;
+      color: #fff;
+    }
+  }
+}
+
+.modal-body{
+  overflow: hidden;
+  .product-gallery,.info{
+    float:left;
+    width: 50%;
+  }
+  .product-gallery{
+    padding-right: 10px;
+    img{
+      box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+  .info{
+    padding-left: 10px;
+    .desc{
+      text-align: justify;
+    }
+    .price{
+      font-weight: 600;
+      color: #d61b11;
+    }
+  }
+}
+
+#loadingspinner{
+  background-color: rgba(0,0,0,0.8);
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  top:0;
+  height: 100%;
+
+  display: table;
+  a{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+
+
+
+@import "header";
+@import "menu";
+@import "main";
+@import "footer";
+@import "page";
+@import "responsive";
